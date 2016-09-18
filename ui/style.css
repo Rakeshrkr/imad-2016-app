@@ -23,3 +23,10 @@ body {
     height: 200px;
 }
 
+.container{
+    font-family: sans-serif;
+    background-color: grey;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
