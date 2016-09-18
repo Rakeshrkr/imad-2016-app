@@ -22,7 +22,7 @@ function createTamplete(data){
     var date = data.date;
     var content = data.content;
     
-var htmltemplete=`
+var htmlTemplete=`
 <!Doctype html>
 <html>
     <head>
