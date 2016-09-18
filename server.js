@@ -15,7 +15,8 @@ var articles={
         <p>This is the content of About us page. This is the content of About us page.This is the content of About us page. This is the content of About us page. This is the content of About us page.  </p>
     </div> `
 },
-    'login': {title: "Login | Rakesh" ,
+    'login': {
+    title: "Login | Rakesh" ,
     heading: "Login Page" ,
     date: "9th sept 2016" ,
     content: `<div>
