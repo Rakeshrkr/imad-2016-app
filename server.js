@@ -15,7 +15,7 @@ var articles={
         <p>This is the content of About us page. This is the content of About us page.This is the content of About us page. This is the content of About us page. This is the content of About us page.  </p>
     </div> `
 },
-    'login': {
+    login: {
     title: "Login | Rakesh" ,
     heading: "Login Page" ,
     date: "9th sept 2016" ,
@@ -24,7 +24,7 @@ var articles={
         <p>This is the content of Login page. This is the content of Login page.This is the content of Login page. This is the content of Login page. This is the content of Login page.  </p>
         <p>This is the content of Login page. This is the content of Login page.This is the content of Login page. This is the content of Login page. This is the content of Login page.  </p>
     </div> `},
-    'logout': { 
+    logout: { 
          title: "Logout | Rakesh" ,
     heading: "Logout Page" ,
     date: "15th sept 2016" ,
