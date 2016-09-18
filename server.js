@@ -55,7 +55,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/aboutUs',function(req,res){
-  res.send(crateTamplete(aboutus));
+  res.send(createTamplete(aboutus));
 });
 app.get('/Login',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'Login.html'));
