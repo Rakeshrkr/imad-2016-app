@@ -2,8 +2,8 @@ body {
    font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 75px;
-    padding-left: 8px;
-    padding-right: 8px;
+   
+    text-align: center;
    
 }
 
@@ -28,4 +28,6 @@ body {
     background-color: grey;
     max-width: 1000px;
     text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
 }
