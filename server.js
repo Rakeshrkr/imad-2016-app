@@ -4,18 +4,37 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var aboutus={
+var articles={
+    'aboutus': {
     title: "Abous Us | Rakesh" ,
-    heading: "Login Page" ,
+    heading: "About us Page" ,
     date: "5th sept 2016" ,
     content: `<div>
         <p>This is the content of About us page. This is the content of About us page.This is the content of About us page. This is the content of About us page. This is the content of About us page.  </p>
         <p>This is the content of About us page. This is the content of About us page.This is the content of About us page. This is the content of About us page. This is the content of About us page.  </p>
         <p>This is the content of About us page. This is the content of About us page.This is the content of About us page. This is the content of About us page. This is the content of About us page.  </p>
     </div> `
+},
+    'login': {title: "Login | Rakesh" ,
+    heading: "Login Page" ,
+    date: "9th sept 2016" ,
+    content: `<div>
+        <p>This is the content of Login page. This is the content of Login page.This is the content of Login page. This is the content of Login page. This is the content of Login page.  </p>
+        <p>This is the content of Login page. This is the content of Login page.This is the content of Login page. This is the content of Login page. This is the content of Login page.  </p>
+        <p>This is the content of Login page. This is the content of Login page.This is the content of Login page. This is the content of Login page. This is the content of Login page.  </p>
+    </div> `},
+    'logout': { 
+         title: "Logout | Rakesh" ,
+    heading: "Logout Page" ,
+    date: "15th sept 2016" ,
+    content: `<div>
+        <p>This is the content of Logout page. This is the content of Logout page.This is the content of Logout page. This is the content of Logout page. This is the content of Logout page.  </p>
+        <p>This is the content of Logout page. This is the content of Logout page.This is the content of Logout page. This is the content of Logout page. This is the content of Logout page.  </p>
+        <p>This is the content of Logout page. This is the content of Logout page.This is the content of Logout page. This is the content of Logout page. This is the content of Logout page.  </p>
+    </div> `
+        
+    }
 };
-
 function createTamplete(data){
     var title = data.title;
     var heading =data.heading;
@@ -54,14 +73,9 @@ return htmlTemplete ;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/aboutUs',function(req,res){
-  res.send(createTamplete(aboutus));
-});
-app.get('/Login',function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'Login.html'));
-});
-app.get('/Logout',function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'Logout.html'));
+app.get('/:articleName',function(req,res){
+    var articleName = req.params.articleName ;
+  res.send(createTamplete(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
