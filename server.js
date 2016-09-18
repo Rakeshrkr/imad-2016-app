@@ -5,7 +5,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-    aboutus: {
+    'aboutUs': {
     title: "Abous Us | Rakesh" ,
     heading: "About us Page" ,
     date: "5th sept 2016" ,
